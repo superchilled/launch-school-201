@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <title>Lesson 2 | Exercises: CSS Dimensions &amp; Spacing 2</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+
+      .ex5 div {
+        width: 300px;
+        height: 300px;
+      }
+
+      .ex5 .box-1 {
+        background-color: #fcc;
+      }
+
+      .ex5 .box-2 {
+        background-color: #ccf;
+      }
+
+      .ex6 div {
+        width: 300px;
+        height: 300px;
+      }
+
+      .ex6 .box-1 {
+        background-color: #fcc;
+      }
+
+      .ex6 .box-2 {
+        background-color: #ccf;
+        border: #000 2px solid;
+      }
+
+      .ex7 div {
+        width: 300px;
+        height: 300px;
+        box-sizing: border-box;
+      }
+
+      .ex7 .box-1 {
+        background-color: #fcc;
+        padding: 20px;
+      }
+
+      .ex7 .box-2 {
+        background-color: #ccf;
+        border: #000 2px solid;
+      }
+
+      .ex8 div {
+        width: 300px;
+        height: 300px;
+        box-sizing: border-box;
+        display: inline-block;
+      }
+
+      .ex8 .box-1 {
+        background-color: #fcc;
+        padding: 20px;
+      }
+
+      .ex8 .box-2 {
+        background-color: #ccf;
+        border: #000 2px solid;
+      }
+
+      .ex9 div {
+        width: 300px;
+        height: 300px;
+        box-sizing: border-box;
+        display: inline-block;
+      }
+
+      .ex9 .box-1 {
+        background-color: #fcc;
+        padding: 20px;
+        margin-right: 10px;
+      }
+
+      .ex9 .box-2 {
+        background-color: #ccf;
+        border: #000 2px solid;
+        margin-left: 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+   
+    <!-- Exercise 5 -->
+    <div class="ex5">
+      <h1>Exercise 5</h1>
+      <p>Starting with a new web page, create two div elements. Make them a fixed width and height of 300 pixels. Set a background color on the first one to "#ffcccc" and the second one to "#ccccff".</p>
+      <div class="box-1"></div>
+      <div class="box-2"></div>
+    </div>
+
+    <!-- Exercise 6 -->
+    <div class="ex6">
+      <h1>Exercise 6</h1>
+      <p>Add a 2 pixel solid black border to the blue div. Compare the widths of the two boxes. Why is the blue box wider?</p>
+      <div class="box-1"></div>
+      <div class="box-2"></div>
+      <p><strong>Answer:</strong> Box 2 is wider because the default box model is content box so the width of the border is added to the width of the box.</p>
+    </div>
+
+    <!-- Exercise 7 -->
+    <div class="ex7">
+      <h1>Exercise 7</h1>
+      <p>Add 20 pixels of padding to all four sides of the red div. Notice the difference in width between the red and blue divs again. Add a CSS property to both divs that will make them each a total width of 300px rather than a starting width of 300px.</p>
+      <div class="box-1"></div>
+      <div class="box-2"></div>
+    </div>
+
+    <!-- Exercise 8 -->
+    <div class="ex8">
+      <h1>Exercise 8</h1>
+      <p>Change both boxes to be positioned horizontally rather than stacked vertically.</p>
+      <div class="box-1"></div>
+      <div class="box-2"></div>
+    </div>
+
+    <!-- Exercise 9 -->
+    <div class="ex9">
+      <h1>Exercise 9</h1>
+      <p>Add 20px of space between the red and blue boxes.</p>
+      <div class="box-1"></div><!--
+      --><div class="box-2"></div>
+    </div>
+
+</html>

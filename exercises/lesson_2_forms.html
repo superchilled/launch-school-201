@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <title>Lesson 2 | Exercises: Forms</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <!-- Exercise 1 -->
+   
+    <form action="" method="post">
+      <fieldset>
+        <dl>
+          <dt><label for="name">Your Name</label></dt>
+          <dd><input type="text" name="name" id="name" required></dd>
+          <dt><label for="email">Email</label></dt>
+          <dd><input type="email" name="email" id="email" required></dd>
+          <dt><label for="phone">Phone Number</label></dt>
+          <dd><input type="tel" name="phone" id="phone" required></dd>
+          <dt><label for="message">Message</label></dt>
+          <dd><textarea name="message" id="message" cols="60" rows="5" required></textarea></dd>
+        </dl>
+        <input type="submit" value="Send Message">
+        <input type="reset" value="Clear">
+      </fieldset>
+    </form>
+
+    <!-- Exercise 2 -->
+
+    <form action="" method="post">
+      <fieldset>
+        <label for="search">Search for</label>
+        <input type="search" name="search" id="search">
+
+        <input type="radio" name="filter" id="tv" value="tv">
+        <label for="tv">TV</label>
+        <input type="radio" name="filter" id="movies" value="movies">
+        <label for="movies">Movies</label>
+        <input type="radio" name="filter" id="music" value="music">
+        <label for="music">Music</label>
+        <input type="submit" value="Search">
+      </fieldset>
+        
+    </form>
+
+    <!-- Exercise 3 -->
+
+    <form action="" method="post">
+      <fieldset>
+        <dl>
+          <dt><label for="movie">Movie</label></dt>
+          <dd>
+            <select name="movie" id="movie">
+              <option value="Looper">Looper</option>
+              <option value="Frozen">Frozen</option>
+              <option value="Tommy Boy">Tommy Boy</option>
+            </select>
+          </dd>
+          <dt><label for="rating">Rating</label></dt>
+          <dd><input type="range" name="rating" id="rating" min="0" max="5" step="1"></dd>
+        </dl>
+        <label><input type="checkbox" name="favourites" checked="">Add to my favourites</label><br>
+        <input type="submit" value="Rate Movie">
+      </fieldset>
+    </form>
+
+  </body>
+</html>
