@@ -1,0 +1,77 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../img/bg_body.gif);
+  color: #45494d;
+  font: normal 20px Helvetica, Arial, sans-serif;
+}
+
+header img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 160px;
+  margin-bottom: 90px;
+}
+
+main {
+  background: #fff;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+article {
+  text-align: center;
+  padding: 80px 100px 50px 100px;
+}
+
+article h1 {
+  font-size: 32px;
+}
+
+article h2 {
+  color: #0ebfdd;
+  font-size: 24px;
+}
+
+footer {
+  background: #e7e7e7;
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 140px;
+  text-align: center;
+}
+
+footer ul {
+  margin-top: 0;
+}
+
+footer li {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin: 30px 65px;
+}
+
+footer a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.twitter {
+  background: url(../img/icon_twitter.png);
+}
+
+.facebook {
+  background: url(../img/icon_facebook.png);
+}
+
+.mail {
+  background: url(../img/icon_email.png);
+}
