@@ -1,0 +1,229 @@
+<html lang="en-US">
+  <head>
+    <title>Lesson 3 | Exercises: CSS Selectors</title>
+    <meta charset="utf-8" />
+    <style>
+      form {
+        width: 450px;
+      }
+      label {
+        display: block;
+      }
+
+      /* 1. Set the font size on all paragraphs to 18px */
+
+      p {
+        font-size: 18px;
+      }
+
+      /* 2. Set a bottom border on all list items to 1px solid #0066cc */
+      /* 3. Change the selector for the previous exercise to make sure the list items in the header are not underlined.*/
+
+      /*main li {
+        border-bottom: 1px solid #0066cc;
+      }*/
+
+      /* 4. Set the font family on paragraphs within article elements to sans-serif */
+
+      article p {
+        font-family: sans-serif;
+      }
+
+      /* 5. Add the background color #e0e0e0 to the class subheading */
+
+      .subheading {
+        background: #e0e0e0;
+      }
+
+      /* 6. Underline the text on the element with ID "intro". Set its font size to 20px. */
+
+      #intro {
+        text-decoration: underline;
+        font-size: 20px;
+      }
+
+      /* Override the border bottom style on main content list items within unordered lists to be dotted */
+
+      /*main ul li {
+        border-bottom-style: dotted;
+      }*/
+
+      /* 8. Set all unordered lists in the header to display: none, then set the direct child unordered list of the header element to display: block */
+
+      header ul {
+        display: none;
+      }
+
+      header > ul {
+        display: block;
+      }
+
+      /* 9. Replace the bottom border on main content list items with a top border. Replace the list items selector with a selector for all sibling list items (each list item after the first) so that the first list item does not have a top border. */
+
+      main li ~ li {
+        border-top: 1px solid #0066cc;
+      }
+
+      main ul li ~ li {
+        border-top-style: dotted;
+      }
+
+      /* Set the top padding of paragraphs that come immediately after an h2 to 20px */
+
+      h2 + p {
+        padding-top:  20px;
+      }
+
+      /* Use a pseudo class to set ul elements that are direct children of li elements in the header to display: block when the li elements are hovered over. */
+
+      header li:hover > ul {
+        display: block;
+      }
+
+      /* 12. When text inputs are being edited, set their background color to #fff9b5 */
+
+      input[type="text"]:focus {
+        background: #fff9b5;
+      }
+
+      /* 13. Using a combination of a pseudo selector and adjacent sibling selector, change the font weight of any spans that follow a checked checkbox to bold. */
+
+      input[type="checkbox"]:checked + span {
+        font-weight: bold;
+      }
+
+      
+      /* 15. Using an attribute selector with an exact value, give all text inputs a border of 1px solid #999999. Be sure to fix the cascade so the border for required inputs still appears. */
+
+      input[type="text"] {
+        border: 1px solid #999999;
+      }
+
+      /* 14. Using an attribute selector, give all required inputs a border of 1px solid #004f75 */
+
+      input[required] {
+        border: 1px solid #004f75;
+      }
+
+      /* 16. In the articles' lists, give the first child a text-indent of 15px */
+
+      article li:first-child {
+        text-indent: 15px;
+      }
+
+      /* 17. Give all table cells within odd numbered table rows a background color of #d4f7fb */
+
+      tbody tr:nth-of-type(odd) td {
+        background: #d4f7fb;
+      }
+
+      tbody tr td:nth-of-type(3) {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Site Title</h1>
+      <ul>
+        <li>
+          <a href="#">Nav Cagetory 1</a>
+          <ul>
+            <li><a href="#">Sub category item 1</a></li>
+            <li><a href="#">Sub category item 2</a></li>
+            <li><a href="#">Sub category item 3</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Nav Cagetory 2</a>
+          <ul>
+            <li><a href="#">Sub category item 1</a></li>
+            <li><a href="#">Sub category item 2</a></li>
+            <li><a href="#">Sub category item 3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <h1>Main Page</h1>
+      <p id="intro">Site introduction lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non ultricies augue. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+      <article>
+        <h2 class="subheading">Article Title</h2>
+        <p>Sed non nunc quam. Fusce vitae dui ut ante gravida posuere. Phasellus arcu nibh, posuere ac dignissim tincidunt, interdum placerat nisi. Nunc sagittis odio arcu, id suscipit enim maximus sit amet. Praesent congue tempus ipsum, at molestie nulla varius in. Donec sollicitudin diam sit amet dapibus faucibus. Nulla at porta ex, at hendrerit felis. Mauris dapibus, arcu vitae fringilla posuere, odio dui pretium mauris, eleifend imperdiet est arcu a lectus.</p>
+        <ul>
+          <li>ac turpis</li>
+          <li>mauris</li>
+          <li>ultrices</li>
+          <li>laoreet</li>
+        </ul>
+        <p>Nunc ac turpis a mauris ultrices laoreet porta quis tellus. Phasellus pellentesque imperdiet erat quis suscipit. Proin vitae varius felis. Morbi at lacus mattis, vestibulum neque at, pretium libero. Nam et pellentesque enim. Nam augue diam, porta ac dapibus ut, semper eget tortor. Duis gravida tristique neque, nec tincidunt nunc commodo ac.</p>
+      </article>
+
+      <article>
+        <h2>Article Title</h2>
+        <p>Suspendisse interdum nec metus volutpat consequat. Aliquam tincidunt, tortor eu accumsan suscipit, ipsum magna dapibus ex, efficitur dictum metus eros et est. Vestibulum sapien metus, mollis in dapibus non, facilisis vel nunc. Integer faucibus sit amet felis nec dignissim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer dictum gravida dui</p>
+        <p>Et venenatis ligula volutpat et. Proin purus nibh, efficitur et porttitor in, ultrices et sapien. Suspendisse id nulla cursus, volutpat nulla a, tempor tortor. Donec aliquam sodales congue. Mauris ornare, ligula quis tristique fermentum, est nisl suscipit metus, sed semper tellus elit quis metus. Aenean id dictum dolor. Proin nec blandit nisi. Quisque ut quam in enim viverra dignissim. Sed quis dapibus eros. Nam feugiat cursus est nec feugiat. Ut vehicula, sapien sed aliquet rutrum, tellus est rutrum mi, non tempor augue massa eu risus</p>
+        <ol>
+          <li>Vivamus</li>
+          <li>luctus</li>
+          <li>molestie</li>
+          <li>ante</li>
+          <li>eget</li>
+        </ol>
+      </article>
+
+      <form action="" method="get">
+        <fieldset>
+          <label for="first_name">First Name</label>
+          <input id="first_name" type="text" required="">
+          <label for="last_name">Last Name</label>
+          <input id="last_name" type="text" required="">
+          <label for="email">Email</label>
+          <input id="email" type="email" required="">
+          <label for="phone">Phone</label>
+          <input id="phone" type="text">
+          <ul>
+            <li>
+              <label><input type="checkbox"><span>I prefer email over text message</span></label>
+            </li>
+            <li>
+              <label><input type="checkbox"><span>I agree to the site's terms of use</span></label>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Confirmed</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Samus Aran</td>
+            <td>samus@tallon.iv</td>
+            <td>✔</td>
+            <td>314-159-2653</td>
+          </tr>
+          <tr>
+            <td>Markus Persson</td>
+            <td>me@minecraft.net</td>
+            <td>✔</td>
+            <td>481-516-2342</td>
+          </tr>
+          <tr>
+            <td>Nathan Drake</td>
+            <td>nate@uncharted.pro</td>
+            <td>X</td>
+            <td>911-119-2007</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>

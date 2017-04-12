@@ -1,0 +1,200 @@
+/**,
+*:before,
+*:after {
+  box-sizing: border-box;
+}*/
+
+
+/* General Styles */
+
+body {
+  background: #eee;
+  color: #747474;
+  font: 16px Helvetica, Verdana, sans-serif;
+}
+
+header,
+main {
+  width: 1080px;
+  margin: 0 auto;
+  border: #747474 2px solid;
+  padding: 0 20px;
+}
+
+header {
+  margin-bottom: 10px;
+}
+
+main {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #D24446;
+}
+
+h1 {
+  text-align: center;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+code {
+  color: #0E3E0C;
+}
+
+/* Section-specific Styles */
+
+.codeblock {
+  display: block;
+  margin: 10px 50px;
+}
+
+.codeblock span {
+  display: block;
+  text-indent: 2em;
+}
+
+.codeblock span:first-child,
+.codeblock span:last-child {
+  text-indent: 0;
+}
+
+.inline-menu-container {
+  border: #747474 2px dashed;
+}
+
+.inline-menu-container a {
+  color: #747474;
+  text-decoration: none;
+}
+
+.has-margin a {
+  margin: 30px;
+}
+
+.has-padding a {
+  padding: 15px;
+  background: rgba(31, 132, 26, 0.6)
+}
+
+.is-floated a {
+  float: left;
+}
+
+.is-floated:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.box-1,
+.box-2,
+.box-3 {
+  margin: 0;
+}
+
+.box-1 {
+  background: rgb(238, 43, 59);
+  color: #fff;
+}
+
+.box-2 {
+  background: rgb(43, 124, 238);
+  color: #fff;
+}
+
+.box-3 {
+  background: rgb(43, 238, 47);
+  color: #fff;
+}
+
+.width-set {
+  width: 90px;
+}
+
+.height-set {
+  height: 60px;
+}
+
+.padding-set {
+  padding: 20px;
+}
+
+.margin-set {
+  margin: 20px;
+}
+
+.floated-left {
+  float: left;
+}
+
+.floated-right {
+  float: right;
+}
+
+.dimensions-set {
+  width: 50%;
+  height: 50px;
+}
+
+.block-menu-container a,
+.inline-block-menu-container a {
+  background: rgb(43, 238, 229);
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.block-menu-container a {
+  display: block;
+}
+
+.inline-block-menu-container {
+  text-align: center;
+}
+
+.inline-block-menu-container a {
+  display: inline-block;
+}
+
+.clears {
+  clear: both;
+}
+
+.pos-fixed {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+.pos-relative {
+  position: relative;
+  left: -90px;
+  top: 25px;
+}
+
+.pos-absolute {
+  position: absolute;
+  bottom: 20px;
+  left: 70px;
+}
+
+.pos-fixed,
+.pos-relative,
+.pos-absolute {
+  padding: 10px;
+  border-radius: 5px;
+}
