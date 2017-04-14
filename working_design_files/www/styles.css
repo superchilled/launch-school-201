@@ -1,0 +1,114 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* Colours
+
+off white - #fcfff5
+light green - #d1dbbd
+dark green - #91aa9d
+medium blue - #3e606f
+dark blue - #193441
+
+*/
+
+body {
+  background: #d1dbbd;
+  background: linear-gradient( 0deg, #fcfff5, #d1dbbd);
+  font: normal 18px 'Roboto Condensed', Verdana, sans-serif;
+}
+
+header,
+main,
+footer {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header, nav {
+  height: 140px;
+}
+
+h1 {
+  width: 340px;
+  margin: 20px;
+  float: left;
+  padding: 50px 0 35px 110px;
+  background: url(img/camera-icon.png) no-repeat;
+  color: #193441;
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-top: 50px;
+}
+
+nav {
+  position: relative;
+  width: 540px;
+  margin: 20px;
+  float: right;
+}
+
+nav ul {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  width: 130px;
+  margin: 0 2px;
+  line-height: 2.5em;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+nav a {
+  display: block;
+  background: #fcfff5;
+  color: #91aa9d;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  text-decoration: none;
+}
+
+.current {
+  background: #91aa9d;
+  color: #fcfff5;
+}
+
+main {
+  padding: 30px;
+  background: #fcfff5;
+  color: #3e606f;
+  box-shadow: 0px 5px 0px 0px #b5b5b5;
+}
+
+.side-img {
+  float: right;
+  margin-left: 15px;
+}
+
+main p {
+  margin: 15px 0;
+}
+
+
+footer small {
+  font-size: 14px;
+  color: #3e606f;
+}
+
+/* utility classes */
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
