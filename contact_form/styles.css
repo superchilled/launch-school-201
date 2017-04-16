@@ -1,0 +1,59 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font: normal 16px Helvetica, Verdana, sans-serif;
+  color: #3F3640;
+}
+
+form {
+  width: 600px;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+  font-weight: bold;
+}
+
+dt,
+dd {
+  margin-bottom: 10px;
+}
+
+dd {
+  margin-left: 0;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font: normal 16px Helvetica, Verdana, sans-serif;
+  color: #3F3640;
+}
+
+input {
+  height: 30px;
+}
+
+input[type="color"] {
+  width: 100px;
+  height: 50px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  width: auto;
+  display: inline-block;
+  padding: 0;
+}
