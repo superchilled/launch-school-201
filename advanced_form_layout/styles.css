@@ -1,0 +1,26 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font: normal 14px Helvetica, sans-serif;
+}
+
+form {
+  width: 600px;
+  margin: 0 auto;
+}
+
+fieldset {
+  background: #ececec;
+  border: none;
+  border-left: #ccc 4px solid;
+}
+
+form > fieldset {
+  margin: 0;
+  border: none;
+  background: #fff;
+}
