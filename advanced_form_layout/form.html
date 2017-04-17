@@ -8,17 +8,21 @@
   <body>
     <form action="" method="post">
       <fieldset>
-        <legend>Create Your Profile</legend>
+        <legend><h1>Create Your Profile</h1></legend>
           <fieldset>
-            <legend>Personal Info</legend>
-              <dl>
+            <legend><h2>Personal Info</h2></legend>
+              <dl class="multiple-two">
                 <dt>
                   <label for="first_name">Your Name</label>
                 </dt>
                 <dd>
-                  <input type="text" name="first_name" id="first_name">
-                  <input type="text" name="last_name" id="last_name">
+                  <input type="text" name="first_name" id="first_name" placeholder="First">
+                </dd><!--
+            --><dd>
+                  <input type="text" name="last_name" id="last_name" placeholder="Last">
                 </dd>
+              </dl>
+              <dl>
                 <dt>
                   <label for="email">Email</label>
                 </dt>
@@ -28,20 +32,24 @@
               </dl>
           </fieldset>
           <fieldset>
-            <legend>Social Media Accounts</legend>
-            <dl>
+            <legend><h2>Social Media Accounts</h2></legend>
+            <dl class="partial third">
               <dt>
                 <label for="facebook">Facebook</label>
               </dt>
               <dd>
                 <input type="text" name="facebook" id="facebook">
               </dd>
+            </dl><!--
+            --><dl class="partial third">
               <dt>
                 <label for="twitter">Twitter</label>
               </dt>
               <dd>
                 <input type="text" name="twitter" id="twitter">
               </dd>
+            </dl><!--
+            --><dl class="partial third">
               <dt>
                 <label for="linkedin">Linkedin</label>
               </dt>
@@ -51,7 +59,7 @@
             </dl>
           </fieldset>
           <fieldset>
-            <legend>Account Info</legend>
+            <legend><h2>Account Info</h2></legend>
             <dl>
               <dt>
                 <label for="profile_name">Profile Name</label>
@@ -59,12 +67,16 @@
               <dd>
                 <input type="text" name="profile_name" id="profile_name">
               </dd>
+            </dl><!--
+            --><dl class="partial half">
               <dt>
                 <label for="password">Password</label>
               </dt>
               <dd>
                 <input type="password" name="password" id="password">
               </dd>
+            </dl><!--
+            --><dl class="partial half">
               <dt>
                 <label for="confirm_password">Confirm Password</label>
               </dt>
@@ -74,11 +86,11 @@
             </dl>
           </fieldset>
           <fieldset>
-            <legend>Bio</legend>
+            <legend><h2>Bio</h2></legend>
             <textarea name="bio" cols="40" rows="10"></textarea>
           </fieldset>
           <fieldset>
-            <label><input type="checkbox" name="argeement"/>I agree to treat other users with respect, and will not say anthing at all if I have nothing nice to say.</label>
+            <label><input type="checkbox" name="argeement"/><p>I agree to treat other users with respect, and will not say anthing at all if I have nothing nice to say.</p></label>
             <input type="submit" value="Create Account">
           </fieldset>
       </fieldset>

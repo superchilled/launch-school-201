@@ -6,6 +6,18 @@
 
 body {
   font: normal 14px Helvetica, sans-serif;
+  color: #282828;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: normal;
+  padding: 20px 0;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 form {
@@ -14,13 +26,130 @@ form {
 }
 
 fieldset {
+  position: relative;
   background: #ececec;
   border: none;
   border-left: #ccc 4px solid;
+  margin: 0;
+  margin-bottom: 2px;
+  padding: 32px;
 }
 
 form > fieldset {
-  margin: 0;
   border: none;
   background: #fff;
+  padding: 0;
+}
+
+legend {
+  position: absolute;
+  top: 5px;
+  padding: 0;
+}
+
+form > fieldset > legend {
+  position: static;
+}
+
+dl {
+  margin-top: 26px;
+}
+
+dd {
+  margin-left: 0;
+  padding: 14px 0;
+}
+
+.multiple-two dd {
+  display: inline-block;
+  width: 50%;
+}
+
+.multiple-two input {
+  width: 95%;
+}
+
+.multiple-two dd:last-of-type input {
+  width: 100%;
+}
+
+.partial {
+  display: inline-block;
+}
+
+.half {
+  width: 50%;
+}
+
+.half input {
+  width: 95%;
+}
+
+[class~="half"]:last-of-type input {
+  width: 100%;
+}
+
+.third {
+  width: 33.3%;
+}
+
+.third input {
+  width: 95%;
+}
+
+[class~="third"]:last-of-type input {
+  width: 100%;
+}
+
+label {
+  color: #666766;
+  display: block;
+}
+
+dl label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  font-size:  14px;
+  padding: 12px;
+  border: #2e67b2 1px solid;
+  border-radius: 5px;
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  width: auto;
+}
+
+input[type="submit"] {
+  width: auto;
+  padding: 15px 30px;
+  margin: 20px 0;
+  border: none;
+  background: #2e67b2;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  background: #5f95cb;
+}
+
+input[type="checkbox"] {
+  float: left;
+}
+
+input[type="checkbox"] + p {
+  margin-left: 25px;
+}
+
+
+textarea {
+  margin-top: 40px;
+  resize: vertical;
 }
