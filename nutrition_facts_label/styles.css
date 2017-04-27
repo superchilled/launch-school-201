@@ -1,0 +1,168 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* End Reset */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font: normal 28px Arial, sans-serif;
+  color: #000;
+}
+
+article {
+  width: 680px;
+  margin: 8px;
+  border: #000 2px solid;
+  padding: 15px;
+}
+
+header {
+  padding-bottom: 5px;
+  border-bottom: #000 30px solid;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 56px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+table {
+  width: 100%;
+  position: relative;
+}
+
+caption {
+  text-align: left;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+main thead tr:first-child {
+  border-bottom: #000 15px solid;
+}
+
+main thead tr:last-child th {
+  padding-top: 12px;
+}
+
+tbody:nth-of-type(2) {
+  border-top: #000 30px solid;
+}
+
+tr {
+  border-top: #000 1px solid;
+}
+
+.subdivision {
+  border: none;
+}
+
+main .subdivision td {
+  border-top: #000 1px solid;
+}
+
+.subdivision td:first-child,
+.subdivision th:first-child {
+  display: block;
+  margin-left: 25px;
+}
+
+th {
+  text-align: left;
+}
+
+main th:last-child {
+  text-align: right;
+  font-weight: bold;
+}
+
+td {
+  padding: 2.5px 0;
+}
+
+main td:last-child {
+  text-align: right;
+}
+
+tfoot td:last-child {
+  font-size: 24px;
+  text-align: justify;
+  padding: 20px;
+}
+
+tfoot {
+  text-indent: -20px;
+}
+
+footer {
+  font-size: 22px;
+}
+
+footer thead {
+  border-bottom: #000 1px solid;
+}
+
+footer tr {
+  border: none;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
