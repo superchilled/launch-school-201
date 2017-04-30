@@ -3,10 +3,11 @@
   <head>
     <title>Responsive Blog | Post Headline</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css" type="text/css">
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <h1>Blog Title</h1>
       <nav>
         <ul>
@@ -23,18 +24,24 @@
         <main>
           <article class="post full">
             <section class="content">
-              <h1>Post Headline</h1>
-              <p class="byline">Written by <a href="">Shane Riley</a> on Feb,15,2014</p>
+              <header>
+                <h1>Post Headline</h1>
+                <p>Written by <a href="">Shane Riley</a> on <time datetime="2014-02-15">Feb,15,2014</time></p>
+              </header>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alquip ex ea commodo consequat. Duis aute irure dolor in rprehenderit in voluptate velit esse culpa qui officia deserunt mollit.</p>
             </section>
             <section>
               <h2>Comments</h2>
               <article class="comment">
-                <img src="img/kevin.png" alt="Photo of Kevin"><h1><a href="">Kevin</a> on Feb,15,2014</h1>
+                <header>
+                  <img src="img/kevin.png" alt="Photo of Kevin"><h1><a href="">Kevin</a> on <time datetime="2014-02-15">Feb,15,2014</time></h1>
+                </header>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
               </article>
               <article class="comment">
-                <img src="img/chris.png" alt="Photo of Chris"><h1><a href="">Chris</a> on Feb,15,2014</h1>
+                <header>
+                  <img src="img/chris.png" alt="Photo of Chris"><h1><a href="">Chris</a> on <time datetime="2014-02-15">Feb,15,2014</time></h1>
+                </header>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </article>
             </section>
