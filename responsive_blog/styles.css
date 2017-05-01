@@ -143,6 +143,9 @@ aside {
 	width: 235px;
 	float: right;
 	margin-right: -235px;
+}
+
+aside > section {
 	padding: 35px 30px 30px 35px;
 	background: #f6f7f8;
 }
@@ -158,7 +161,7 @@ aside h2 {
 aside ul,
 aside p {
 	font-size: 14px;
-	margin-bottom: 120px;
+	margin-bottom: 90px;
 }
 
 aside ul {
@@ -340,7 +343,7 @@ textarea {
 		width: 90%;
 		margin: 0 auto;
 		font-size: 48px;
-		padding: 70px 0;
+		padding: 60px 0 100px 0;
 		background-size: 100%;
 	}
 
@@ -357,22 +360,149 @@ textarea {
 		padding-bottom: 10px;
 	}
 
+	.columns {
+		margin: 20px 0;
+	}
+
+	main {
+		float: none;
+		padding: 30px ;
+	}
+
+	.post,
+	.post section {
+		margin-bottom: 40px;
+	}
+
+	.post h1,
+	.post section h2  {
+		font-size: 26px;
+	}
+
+	.comment h1 {
+		font-size: 18px;
+	}
+
+	aside {
+		width: 100%;
+		float: none;
+		margin-right: 0;
+		padding: 30px;
+	}
+
+	aside > section {
+		margin-bottom: 30px;
+	}
+
+
+	aside ul,
+	aside p {
+		margin-bottom: 0;
+	}
+
+	footer p {
+		padding-left: 10px;
+	}
+
 }
 
 /* 480px to 600px */
 @media all and (min-width: 30.001em) and (max-width: 37.5em) {
 
-	body {
-		background: blue;
+	.main-header h1 {
+		width: 90%;
+		margin: 0 auto;
+		font-size: 54px;
+		padding: 60px 0 120px 0;
+		background-size: 100%;
 	}
 
+	nav ul {
+		padding: 50px 0 20px 0;
+	}
+
+	.columns {
+		margin: 20px 0;
+	}
+
+	main {
+		float: none;
+		padding: 30px ;
+	}
+
+	.post,
+	.post section {
+		margin-bottom: 40px;
+	}
+
+	.post h1,
+	.post section h2  {
+		font-size: 26px;
+	}
+
+	.comment h1 {
+		font-size: 18px;
+	}
+
+	aside {
+		width: 100%;
+		float: none;
+		margin-right: 0;
+		margin-bottom: 40px;
+		background: #f6f7f8;
+	}
+
+	aside:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	aside > section {
+		width: 50%;
+		float: left;
+	}
+
+	aside ul,
+	aside p {
+		margin-bottom: 0;
+	}
+
+	footer p {
+		padding-left: 20px;
+	}
 }
 
 /* 600px to 768px */
 @media all and (min-width: 37.501em) and (max-width: 48em) {
 
-	body {
-		background: green;
+	.main-header h1 {
+		width: 70%;
+		margin: 0 auto;
+		font-size: 50px;
+		padding: 20px 0 120px 0;
+		background-size: 100%;
+	}
+
+	nav ul {
+		padding: 80px 0 20px 0;
+	}
+
+	.post h1,
+	.post section h2  {
+		font-size: 26px;
+	}
+
+	.comment h1 {
+		font-size: 18px;
+	}
+
+	main {
+		padding: 20px ;
+	}
+
+	footer p {
+		padding-left: 20px;
 	}
 
 }
