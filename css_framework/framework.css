@@ -1,0 +1,161 @@
+@import url("whitespace-reset.css");
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: .6rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin-bottom: .6rem;
+}
+
+.copy p,
+.copy ul,
+.copy ol {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  margin-bottom: .8rem;
+}
+
+.copy ul,
+.copy ol {
+  list-style-position: inside;
+  padding: 0 0 1rem 1rem;
+}
+
+.copy ul ul,
+.copy ol ol {
+  padding-top: 1rem;
+}
+
+.copy ul {
+  list-style-type: disc;
+}
+
+.copy ul ul {
+  list-style-type: circle;
+}
+
+.copy ol {
+  list-style-type: decimal;
+}
+
+.copy ol ol {
+  list-style-type: lower-alpha;
+}
+
+.copy ol.roman {
+  list-style-type: upper-roman;
+}
+
+.copy ol.roman ol {
+  list-style-type: lower-roman;
+}
+
+.row {
+  max-width: 86rem;
+  margin: 0 auto 1rem auto;
+  clear: both;
+}
+
+.row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@media all and (min-width: 37.5em) {
+
+  .sixth,
+  .fourth,
+  .third,
+  .half,
+  .two_third,
+  .five_sixth {
+    float: left;
+  }
+
+  .sixth {
+    width: 16.666666666666668%;
+  }
+
+  .fourth {
+    width: 25%;
+  }
+
+  .third {
+    width: 33.333333333333336%;
+  }
+
+  .half {
+    width: 50%;
+  }
+
+  .two_third {
+    width: 66.66666666666667%;
+  }
+
+  .five_sixth {
+    width: 83.33333333333334%;
+  }
+
+  .margin_row .sixth,
+  .margin_row .fourth,
+  .margin_row .third,
+  .margin_row .half,
+  .margin_row .two_third,
+  .margin_row .five_sixth {
+    margin-left: 2%;
+  }
+
+  .margin_row .sixth:first-child,
+  .margin_row .fourth:first-child,
+  .margin_row .third:first-child,
+  .margin_row .half:first-child,
+  .margin_row .two_third:first-child,
+  .margin_row .five_sixth:first-child {
+    margin-left: 0;
+  }
+
+  .margin_row > .sixth {
+    width: 15%;
+  }
+
+  .margin_row > .fourth {
+    width: 23.5%;
+  }
+
+  .margin_row > .third {
+    width: 32%;
+  }
+
+  .margin_row > .half {
+    width: 49%;
+  }
+
+  .margin_row > .two_third {
+    width: 66%;
+  }
+
+  .margin_row > .five_sixth {
+    width: 83%;
+  }
+
+}
